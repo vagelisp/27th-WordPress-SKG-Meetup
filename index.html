@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>27th Thessaloniki WordPress Meetup.</title>
+
+	<link rel="stylesheet" href="css/reveal.css" />
+	<link rel="stylesheet" href="css/theme/myplanet.css" />
+	<link rel="stylesheet" href="/plugin/poll/style.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/stackoverflow-dark.css" />
+	<link rel="icon" href="lib/wcath22/logo_site_info.png" />
+
+	<!-- Printing, PDF exports & PLugins -->
+	<script src="js/reveal-print.js"></script>
+	<script src="/lib/js/qrious.min.js"></script>
+	<script src="/lib/js/chart.min.js"></script>
+	<script src="/lib/js/socket.io.js"></script>
+	<script src="/plugin/seminar/plugin.js"></script>
+	<script src="/plugin/poll/plugin.js"></script>
+	<script src="/plugin/chart/plugin.js"></script>
+</head>
+
+<body>
+	<div class="reveal pattern--random">
+		<div class="slides">
+			<section class="end color--radiant" id="welcome" data-background-color="#0F2E91"
+				data-background-image="lib/wcath22/waves.png">
+				<div class="logo-wrapper">
+					<div class="logo--full-info">
+						<span class="visually-hidden">2th SKG WordPress Meetup</span>
+					</div>
+				</div>
+			</section>
+			<section>
+				<section class="title" id="title">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo logo--full">
+								<span class="visually-hidden">2th SKG WordPress Meetup</span>
+							</div>
+						</div>
+						<div class="content">
+							<h1>Thessaloniki WordPress Meetup Block Theme</h1>
+							<div class="description" style="overflow: hidden">
+								<canvas id="qrcode" style="width: 100%"></canvas>
+							</div>
+						</div>
+						<div class="credit d-none">
+							<hr />
+							<div class="name">Vagelis Papaioannou</div>
+							<div class="role">Software Developer</div>
+							<div class="role">hello@vagelis.dev</div>
+						</div>
+					</div>
+				</section>
+				<section class="intro" id="connect" data-transition="zoom">
+					<div class="logo-wrapper">
+						<div class="logo">
+							<input type="hidden" id="password" style="font-size: 70%" value="wcath22" />
+							<canvas id="qrcodeSecond"></canvas>
+							<small class="hidden"><a id="room" style="display: none;"></a></small>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="quote color--midnight" id="plan">
+				<div class="grid-wrapper">
+					<div class="header">
+						<h1>Σήμερα θα.. </h1>
+					</div>
+					<div class="content">
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								μιλήσουμε για Themes
+							</span>
+						</h1>
+
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								μιλήσουμε για Εργαλεία
+							</span>
+						</h1>
+						
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-green">
+								ανταλάξουμε Ιδεές
+							</span>
+						</h1>
+
+						<h1 class="fragment fade-in">
+							<span class="fragment highlight-red">
+								Δημιουργήσουμε τα πρώτα αρχεία του Theme
+							</span>
+						</h1>
+					</div>
+				</div>
+			</section>
+			<section class="title-freaked" style="overflow:hidden;background-color: rgba(255,255,255,0.9);"
+				id="say-what">
+				<div class="grid-wrapper">
+					<div class="">
+						<h1>Themes</h1>
+						<div class="description">
+							<img src="/lib/27th-meetup/themes.png" style="height: 1200px;object-fit: cover;"
+								class="fhim">
+						</div>
+					</div>
+			</section>
+			<section class="color--ice" id="classic-themes">
+				<div class="grid-wrapper">
+					<div class="header">
+						<h1>Classic Themes</h1>
+					</div>
+		
+					<div class="content">
+					<img data-src="lib/27th-meetup/2017.png" style="">
+					</div>
+				</div>
+			</section>
+			<section id="block-themes" class="color--ice"  data-transition="concave">
+					<div class="grid-wrapper">
+						<div class="header">
+							<h1>Block Themes</h1>
+						</div>
+						<div class="content">
+							<img data-src="lib/27th-meetup/2023.png" style="">
+						</div>
+					</div>
+				</section>
+				<section id="hybrid-themes" class="color--ice"  data-transition="concave">
+					<div class="grid-wrapper">
+						<div class="header">
+							<h1>Hybrid Themes - WordPress 6.1 🎉</h1>
+						</div>
+						<div class="content">
+							<img data-src="lib/27th-meetup/hybrid.jpg">
+						</div>
+					</div>
+				</section>
+
+
+			<section class="quote color--midnight" id="stack">
+				<div class="grid-wrapper">
+					<div class="header">
+						<h1>Εργαλεία</h1>
+					</div>
+					<div class="content logos">
+						<img src="lib/27th-meetup/github-logo.png">
+						<img src="lib/27th-meetup/slack-logo.png">
+						<img src="lib/27th-meetup/vs-logo.png">
+					</div>
+
+					<div class="contents logos">	
+						<img src="lib/27th-meetup/laragon-logo.png">
+						<img src="lib/27th-meetup/local-by-flywheel-logo.png">
+					</div>
+
+				</div>
+			</section>
+
+			<section class="team color--midnight" id="reviews">
+				<div class="grid-wrapper">
+					<div class="header">
+						<h1>Ιδέες</h1>
+					</div>
+					<div class="content">
+						<h1>
+							Open Floour
+						</h1>
+					</div>
+				</div>
+			</section>
+
+		
+			<section class="title" id="fin">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo logo--full">
+							<span class="visually-hidden">2th SKG WordPress Meetup</span>
+						</div>
+					</div>
+					<div class="content">
+						<h1>Σας ευχαριστούμε για τη συμετοχή σας.</h1>
+						<div class="description" style="overflow: hidden">
+							<canvas id="qrcodev" style="width: 100%"></canvas>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="js/seminar.js"></script>
+	<script src="js/reveal-init.js"></script>
+	<script>
+
+		document.querySelector("#host").addEventListener("click", function (e) {
+			e.preventDefault();
+			RevealSeminar.open_or_join_room(
+				document.getElementById("password").value
+			);
+		});
+
+		document.querySelector("#hostSecond").addEventListener("click", function (e) {
+			e.preventDefault();
+			RevealSeminar.open_or_join_room(
+				document.getElementById("password").value
+			);
+		});
+
+	</script>
+
+	</script> -->
+	<div id="seminar-status" style="display: none;"></div>
+</body>
+
+</html>
